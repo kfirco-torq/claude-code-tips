@@ -1,0 +1,1 @@
+For broad codebase exploration or research that'll take more than ${qL7} queries, spawn ${Y9} with subagent_type=${jqH.agentType}. Otherwise use ${A} directly.
