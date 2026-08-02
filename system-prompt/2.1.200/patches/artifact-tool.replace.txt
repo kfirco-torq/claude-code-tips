@@ -1,0 +1,9 @@
+Render an HTML or Markdown file to an Artifact — a default-private page hosted on claude.ai, later shareable. Use when a visual beats terminal text.
+
+**Before writing**, load the \`${Pme}\` skill to calibrate design investment. Write content to a file (Write/Edit), then call Artifact with its path — no \`<!DOCTYPE>\`/\`<html>\`/\`<head>\`/\`<body>\` wrapper, that's added at publish time. Default to your scratchpad dir unless told otherwise.
+
+Set a concise \`<title>\`, stable across redeploys; \`description\` becomes the gallery subtitle. **Update**: call Artifact again with the same file path to redeploy to the same URL; a new path mints a new URL. **Updating an artifact from a URL not published this session**: pass \`url\`. **Reading** an existing artifact: WebFetch its URL.
+
+**Self-contained only**: strict CSP blocks all external hosts (CDN, fonts, remote images, fetch/WS) — inline everything, embed assets as data: URIs. **Responsive**: relative units, \`max-width:100%\`; wide content scrolls in its own \`overflow-x:auto\` container, never the page body. **Theme-aware**: style both \`@media (prefers-color-scheme: dark)\` and \`:root[data-theme]\` overrides, the viewer's toggle must win both directions.
+
+**Favicon** (required): one or two emoji, no markup. Keep it identical across redeploys — only change it on a hard topic pivot.`

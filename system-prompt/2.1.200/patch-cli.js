@@ -242,6 +242,11 @@ const patches = [
   // New patches
   { name: 'Slim TaskUpdate description (~1.8KB → 150 chars)', file: 'taskupdate' },
   { name: 'Slim TaskList description (~1.2KB → 90 chars)', file: 'tasklist' },
+
+  // kfir: context-audit follow-up (2026-07-08)
+  { name: 'Slim ReportFindings description (574 → 351 chars)', file: 'reportfindings-tool' },
+  { name: 'Slim ScheduleWakeup description (2.9KB → 1.1KB)', file: 'schedulewakeup-tool' },
+  { name: 'Slim Artifact description (2.9KB → 1.4KB)', file: 'artifact-tool' },
 ];
 
 // Helper: compute SHA256 hash

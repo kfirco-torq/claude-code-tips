@@ -1,0 +1,1 @@
+Report code-review findings as a typed list for the host UI. Only use when the active review instructions call for it; otherwise follow their own format. Call once, findings ranked most-severe first (empty array if none survive verification), and don't also print them as text. When re-reporting after fixes (only if asked), set `outcome` per finding.
