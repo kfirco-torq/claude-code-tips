@@ -1,0 +1,12 @@
+This tool creates an isolated git worktree and switches the current session into it. Default to using it before any edit, write, or source change in a primary (non-worktree) checkout: that checkout's files are visible to any concurrently running process that resolves paths against it — another agent session, a live background job, the user's own working copy — so an uncommitted edit landing there is readable immediately, committed or not, and can corrupt that process's state or pollute a shared workspace others rely on staying clean. Call this tool before your first edit rather than after.
+
+## When to Use
+
+- Before any edit, write, or source change in a primary (non-worktree) checkout
+- The user or project instructions (CLAUDE.md / memory) explicitly ask for a worktree
+
+## When NOT to Use
+
+- You are only reading, searching, or answering questions — no edits pending
+- Your cwd is already inside `.claude/worktrees/` (already isolated)
+

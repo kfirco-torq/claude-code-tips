@@ -183,6 +183,9 @@ const patches = [
   { name: 'Further slim PR creation (~400 → 150 chars)', file: 'pr-creation-v2' },
   { name: 'Slim Bash tool description (3.7KB → 0.6KB)', file: 'bash-tool' },
   { name: 'Slim EnterPlanMode When to Use (1.2KB → 200 chars)', file: 'enterplanmode-when-to-use' },
+  // Not a token-savings patch: rewrites EnterWorktree's gating from "only when explicitly
+  // asked" to "default to it before any source edit in a primary checkout" (personal preference).
+  { name: 'Rewrite EnterWorktree When to Use (always-default, not size)', file: 'enterworktree-when-to-use' },
   { name: 'Slim TodoWrite states section (1.8KB → 0.4KB)', file: 'todowrite-states' },
   { name: 'Slim TodoWrite When to Use (1.2KB → 200 chars)', file: 'todowrite-when-to-use' },
 
