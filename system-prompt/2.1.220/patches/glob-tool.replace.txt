@@ -1,0 +1,1 @@
+function qQi(e){return'Fast pattern-matching file search.'}
