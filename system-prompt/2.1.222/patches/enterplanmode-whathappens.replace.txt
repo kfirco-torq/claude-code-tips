@@ -1,0 +1,5 @@
+2. Understand patterns
+3. Design approach
+4. Present plan for approval
+5. Use ${B3} to clarify
+6. Exit with ${FW}

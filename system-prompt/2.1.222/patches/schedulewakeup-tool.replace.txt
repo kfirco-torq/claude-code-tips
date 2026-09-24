@@ -1,0 +1,9 @@
+Schedule when to resume work in /loop dynamic mode — self-pacing without a fixed interval.
+
+Don't schedule a short poll for harness-tracked background work; you're re-invoked automatically when it finishes. Use a long fallback (1200s+) instead so the loop survives a hang. Exception: external state the harness can't observe (CI, deploy, remote queue) — match the delay to how fast that changes.
+
+Pass the same \`prompt\` each turn to keep repeating; for autonomous /loop use \`${"<<autonomous-loop-dynamic>>"}\` as \`prompt\` (there's a separate \`${"<<autonomous-loop>>"}\` sentinel for CronCreate loops — don't mix them up). To end the loop, call this tool with \`stop: true\` (omit every other field).
+
+**Picking delaySeconds**: the prompt cache has a 5-minute TTL, so sleeping past 300s means the next wake reads uncached (slower, pricier). Stay under 270s only if actively polling something the harness can't track; otherwise commit to 1200–1800s — never park at exactly 300s, that pays the cache miss with none of the benefit of a longer wait. The runtime clamps to [60, 3600].
+
+**reason**: one specific sentence on why this delay, e.g. "watching CI run" not "waiting."

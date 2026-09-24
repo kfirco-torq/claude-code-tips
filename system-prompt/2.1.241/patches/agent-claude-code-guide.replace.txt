@@ -1,0 +1,1 @@
+whenToUse:`For questions about Claude Code, Agent SDK, Claude API, or Claude in Slack. Check for existing agent to resume before spawning new.`

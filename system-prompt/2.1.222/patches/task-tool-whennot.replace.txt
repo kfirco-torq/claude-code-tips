@@ -1,0 +1,2 @@
+## When not to use
+Use ${z9} for known paths, ${M} for symbol/string search.

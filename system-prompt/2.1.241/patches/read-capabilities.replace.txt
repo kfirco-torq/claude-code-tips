@@ -1,0 +1,3 @@
+- Supports images, PDFs, and Jupyter notebooks.
+- Only reads files, not directories.
+- Read screenshots when user provides a path.

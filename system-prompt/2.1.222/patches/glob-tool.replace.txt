@@ -1,0 +1,1 @@
+function qss(e){return'Fast pattern-matching file search.'}

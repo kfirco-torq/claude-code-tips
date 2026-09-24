@@ -1,0 +1,1 @@
+Invoke skills by name. Use only skills from the "Available skills" listing. A background skill returns just the agent name; its result arrives later as a notification.

@@ -1,0 +1,1 @@
+For broad exploration (not specific lookups), spawn ${Y9} with subagent_type=${jqH.agentType}.
